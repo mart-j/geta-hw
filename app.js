@@ -7,7 +7,6 @@ const fetchData = async () => {
     "https://raw.githubusercontent.com/mart-j/jobs/main/positions.json"
   );
   jobs = await response.json();
-  console.log(jobs);
   jobs.forEach((job) => {
     const jobWrapper = document.createElement("div");
     const jobTitle = document.createElement("h3");
